@@ -1,2 +1,2 @@
 # Not_Khakis
-Using Docker?
+Just trying some stuff out with Docker, seeing what is possible and such,
