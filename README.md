@@ -1,2 +1,2 @@
 # Not_Khakis
-Using Docker?
+Learning whatever I can, however I can.
