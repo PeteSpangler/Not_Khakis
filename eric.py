@@ -9,6 +9,7 @@ def findDups(arr):
         elif(hMap[a]==1):
             out += [a]
         hMap[a] += 1
+        print(a, hMap)
     return out
 
 test = [randint(1,9) for x in range(15)]
