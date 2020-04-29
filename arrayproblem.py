@@ -26,10 +26,10 @@ def no_dupes(int_array):
 
 q = no_dupes(int_array)
 
-#iterate over both no_dupes and dupes and return dupes with no_dupes removed?
+#iterate over original list and list without duplicates 
 def dupelist(int_array, q):
-    for k in int_array:
-        if k in q:
+    for k in q:
+        if k in int_array:
             int_array.remove(k)
     return int_array
 
