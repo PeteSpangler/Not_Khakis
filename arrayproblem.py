@@ -27,13 +27,14 @@ def no_dupes(int_array):
 q = no_dupes(int_array)
 
 #iterate over original list and list without duplicates 
-def dupelist(int_array, q):
-    for k in q:
-        if k in int_array:
-            int_array.remove(k)
-    return int_array
+def dupelist(int_array):
+    copylist = int_array.copy()
+    for k in set(copylist):
+        if k in copylist:
+            copylist.remove(k)
+    return copylist
 
-p = dupelist(int_array, q)
+p = dupelist(int_array)
 
 
 print(p)
