@@ -32,4 +32,16 @@ print(p)
 #Goal
 #time O(N), space O(1)
 #1. for time you do one pass through the array
-#
+
+
+scratchpad = [0] * len(int_array)
+print (scratchpad)
+
+for num in int_array:
+    if (scratchpad[num - 1] != 0):
+        print (num)
+    scratchpad[num - 1] = 1 # marking num as seen
+
+#scratchpad is a true false test
+#encode the int array so it fits the problem?
+#try to solve without using scratchpad
