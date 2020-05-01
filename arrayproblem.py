@@ -1,22 +1,10 @@
 #unsorted int array, all valid values between 1 and n
 # where n is size of an array
 # find duplicates in the array and print them to the screen
-int_array = [1, 1, 2, 15, 12, 8, 2, 88, 6, 32, 23, 4, 10, 11, 32, 23, 9, 3, 6, 4, 88, 27, 54] #random int array I came up with?
-#check if there are duplicates in list by comparing length of list vs length of list as set
-def dupes(int_array):
-    if len(int_array) == len(set(int_array)):
-        return False
-    else:
-        return True
-
-x = dupes(int_array)
-
-if x:
-    print("Yes, there be dupes")
-else:
-    print("Nah son, no dupes")
+int_array = [1, 1, 2, 15, 12, 8, 2, 4, 10, 11, 18, 17, 9, 3, 6, 4, 5, 9, 16] #random int array I came up with?
 
 #So if there are duplicates, below is a method to create list removing those duplicates
+#Complexity: time  O(N + Log(N)), space O(n)
 def no_dupes(int_array):
     nodupe = []
     for u in int_array:
@@ -26,6 +14,7 @@ def no_dupes(int_array):
 
 q = no_dupes(int_array)
 
+#Complexity: time: O(Log (n^2)), space O(1)
 #iterate over original list and list without duplicates 
 def dupelist(int_array):
     copylist = int_array.copy()
@@ -38,3 +27,9 @@ p = dupelist(int_array)
 
 
 print(p)
+
+#time: O(N^2), space O(N)
+#Goal
+#time O(N), space O(1)
+#1. for time you do one pass through the array
+#
