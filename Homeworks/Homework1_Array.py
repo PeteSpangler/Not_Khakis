@@ -40,8 +40,26 @@ print (scratchpad)
 for num in int_array:
     if (scratchpad[num - 1] != 0):
         print (num)
-    scratchpad[num - 1] = 1 # marking num as seen
+    scratchpad[num - 1] = 1 # marking num as seen 
 
 #scratchpad is a true false test
 #encode the int array so it fits the problem?
 #try to solve without using scratchpad
+def circlesearch(int_array):
+    tortoise = int_array[0]
+    hare = int_array[0]
+    while True:
+        tortoise = int_array[tortoise]
+        hare = int_array[int_array[hare]]
+        if tortoise == hare:
+            break
+
+    ptr1 = int_array[0]
+    ptr2 = tortoise
+    while ptr1 != ptr2:
+        ptr1 = int_array[ptr1]
+        ptr2 = int_array[ptr2]
+
+    return ptr1
+
+print(circlesearch(int))
