@@ -45,21 +45,9 @@ for num in int_array:
 #scratchpad is a true false test
 #encode the int array so it fits the problem?
 #try to solve without using scratchpad
-def circlesearch(int_array):
-    tortoise = int_array[0]
-    hare = int_array[0]
-    while True:
-        tortoise = int_array[tortoise]
-        hare = int_array[int_array[hare]]
-        if tortoise == hare:
-            break
-
-    ptr1 = int_array[0]
-    ptr2 = tortoise
-    while ptr1 != ptr2:
-        ptr1 = int_array[ptr1]
-        ptr2 = int_array[ptr2]
-
-    return ptr1
-
-print(circlesearch(int))
+#I could make the int array 2 ints that are duplicate and print index[1] or something like that
+#or something about mkaing the int positive or something and turning them negative to make as seen?
+for num in int_array:
+    if int_array[num] != 0:
+        print(num)
+    int_array[num - 1] = 1
