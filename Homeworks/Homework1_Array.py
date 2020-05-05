@@ -48,7 +48,15 @@ length = len(int_array)
 #I could make the int array 2 ints that are duplicate and print index[1] or something like that
 #or something about mkaing the int positive or something and turning them negative to make as seen?
 #or perhaps adding or multiplying by n because its the length of the array and putting it outside the array would do something? (index error, so nah?)
-for num in range(1 , length):
-    if int_array[num - 1] != 0:
-        print(num)
-    int_array[num - 1] = 0
+# for num in range(1 , length):
+#     if int_array[num - 1] != 0:
+#         print(num)
+#     int_array[num - 1] = 0
+
+
+for num in int_array:
+    value = abs(num)
+    if int_array[value - 1] < 0:
+        print(value)
+    else:
+        int_array[value - 1] = -int_array[value - 1]
