@@ -6,6 +6,3 @@ dinner_calories = int(input("Dinner calories: "))
 total_calories = breakfast_calories + lunch_calories + snack_calories + dinner_calories
 print("Your total calories for today: ", total_calories)
 
-
-
-

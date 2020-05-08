@@ -1,4 +1,4 @@
 FROM python:3.8-buster
-COPY . /usr/src/calories.py
+WORKDIR /usr/src
+COPY . .
 CMD ["python", "./calories.py"]
-
