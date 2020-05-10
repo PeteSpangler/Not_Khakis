@@ -5,8 +5,8 @@
 # 1) A class called IntNode, which holds an int value 
 # and a pointer to another IntNode.
 class IntNode:
-    def __init__(self,data):
-        self.data = data
+    def __init__(self,value: int):
+        self.value = value
         self.next = None
 
 # 2) A class called IntList, which has two pointers to IntNodes,
@@ -70,10 +70,9 @@ class IntList:
         temp.next = next
 
 
-
 # 3) Finally, a small program that inserts values 5,3,6 and 5 into your list, 
 # and then iterates with a loop to extract the values and print them on screen.
-
+IntList.insert(1,2)
 # After you're done with this, let me know and send me a link to the python file(s) 
 # in GitHub so I can take a look and then we can talk about small algorithms and
 #  more complex data structures to play with.
