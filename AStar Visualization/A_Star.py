@@ -1,6 +1,6 @@
 """
 This is only possible due to the legend Tech with Tim
-All code due to him, but it was terrifically helpful to better understand the A* algorithm
+All code due to him, and it was terrifically helpful to better understand the A* algorithm
 https://www.youtube.com/watch?v=JtiK0DOeI4A
 """
 import pygame
