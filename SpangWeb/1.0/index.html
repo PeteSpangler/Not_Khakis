@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Projects-Horizontal.css">
 </head>
 
 <body id="page-top">
@@ -36,59 +38,64 @@
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="text-uppercase text-center text-secondary">Tech stack + Projects</h2>
-            <hr class="star-dark mb-5">
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
-                        <div class="text-center d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"></div>
-                        </div><img class="img-fluid d-md-flex justify-content-md-center align-items-md-center" src="assets/img/portfolio/python.jpg" style="margin: 34px;text-align: center;width: 243px;height: 227px;padding: 0px;"></a>
+        </div>
+    </section>
+    <div class="projects-horizontal">
+        <div class="container">
+            <div class="row projects">
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/portfolio/FlaskGood.png"></a></div>
+                        <div class="col">
+                            <h3 class="name"><a href="https://github.com/PeteSpangler/UdacityFullStackWebDev">Fyyur and Trivia API</a></h3>
+                            <p class="description">Utilized the Flask Web Framework for several projects through a Udacity Full Stack Web Development Nanodegree.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/FlaskGood.png"></a>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/portfolio/python.jpg"></a></div>
+                        <div class="col">
+                            <h3 class="name">Python</h3>
+                            <p class="description">My main programming language, most of my projects have been written in Python.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/django-2-282855.png"></a>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/portfolio/docker_Logo.png"></a></div>
+                        <div class="col">
+                            <h3 class="name">Docker</h3>
+                            <p class="description">This website is containerized through Docker.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-4">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/azure-1.png" style="height: 337px;width: 341px;margin: 0px;"></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-5">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/Udacity_logo.png"></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-6">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/docker_Logo.png"></a>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/portfolio/azure-1.png"></a></div>
+                        <div class="col">
+                            <h3 class="name">Azure</h3>
+                            <p class="description">This website is deployed as a container through Azure, and I am currently enrolled in a Udacity Azure Developer Nanodegree.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <section id="about" class="bg-primary text-white mb-0">
         <div class="container">
-            <h2 class="text-uppercase text-center text-white">About</h2>
-            <hr class="star-light mb-5">
-            <div class="row">
-                <div class="col-lg-4 ml-auto">
-                    <p class="lead text-center">An experienced teacher looking to transition into a new industry.</p><a class="btn btn-primary active text-center" role="button" href="page2.html">Click this to learn more!</a></div>
-                <div class="col-lg-4 mr-auto">
-                    <p class="lead text-center">Award Winning Copywriter, avid runner, and a ravenous reader with an insatiable hunger for knowledge.</p>
+            <h2 class="text-uppercase text-center text-white"><a class="btn btn-outline-primary active btn-lg" role="button" href="page2.html" style="background: rgb(44,62,80);width: 300px;height: 50px;padding: 0px;padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;text-align: center;font-size: 30px;"><strong>About</strong></a></h2>
+            <hr
+                class="star-light mb-5">
+                <div class="row">
+                    <div class="col-lg-4 ml-auto">
+                        <p class="lead text-center">An experienced teacher looking to transition into a new industry.</p>
+                    </div>
+                    <div class="col-lg-4 mr-auto">
+                        <p class="lead text-center">Award Winning Copywriter, avid runner, and a ravenous reader with an insatiable hunger for knowledge.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="text-center mt-4"></div>
+                <div class="text-center mt-4"></div>
         </div>
     </section>
     <section id="contact">
@@ -146,120 +153,6 @@
         <div class="container"><small>Copyright ©&nbsp;Pete Spangler 2020</small></div>
     </div>
     <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-    <div class="modal fade text-center text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="height: 0px;"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body" style="opacity: 1;">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Python</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/python.jpg">
-                                <p class="text-center mb-5">Python is my main programming language, it is the first I have learned and it is the first I have gone in depth with. The large majority of my projects were completed in Python.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary active btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="/" target="_parent"><i class="fa fa-close"></i>&nbsp;Close&nbsp;</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="height: 0px;"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Flask</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/FlaskGood.png">
-                                <p class="mb-5">I used Flask as part of my Udacity Full Stack Web Development Nanodegree, in combination with SQLAlchemy to create a musical artist/venue booking website. Source code for that project available&nbsp;<a href="https://github.com/PeteSpangler/UdacityFullStackWebDev/tree/master/fyyur">here</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary active btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="/"><i class="fa fa-close"></i>&nbsp;Close</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="height: 0px;"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Django</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/django-2-282855.png" style="height: 300px;margin: 0px 0px 0px;">
-                                <p class="mb-5">This website was built with Django, styled with Bootstrap 4.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="/"><i class="fa fa-close"></i>&nbsp;Close</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="height: 0px;"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Azure</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/azure-1.png" style="width: 250px;margin: 0px;padding: 0px;">
-                                <p class="mb-5">This site is hosted on Azure, deployed as a container.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="/"><i class="fa fa-close"></i>&nbsp;Close</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade text-center" role="dialog" tabindex="-1" id="portfolio-modal-5">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="height: 0px;"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Udacity</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/Udacity_logo.png">
-                                <p class="mb-5">I have completed one nanodegree, Data Structures and Algorithms with Python. I am in process of completing another, Full Stack Web Development.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="/"><i class="fa fa-close"></i>&nbsp;Close</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade text-center" role="dialog" tabindex="-1" id="portfolio-modal-6">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="height: 0;"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Docker</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/docker_Logo.png">
-                                <p class="mb-5">This website is containerized with Docker and deployed through Azure.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="/"><i class="fa fa-close"></i>&nbsp;Close</a></div>
-            </div>
-        </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/smart-forms.min.js"></script>
