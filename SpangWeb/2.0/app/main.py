@@ -12,13 +12,13 @@ def hello():
 def about():
     return render_template("page2.html")
 
-@app.route('/texture_glass')
-def text_glass():
-    return render_template("texture_glass.html")
-
-@app.route('/images', methods=['GET', 'POST'])
+@app.route('/textured_glass')
 def textured_glass():
-    return render_template("images.html")
+    return render_template("textured_glass.html")
+
+@app.route('/football_data')
+def football_data():
+    return render_template("footballdata.html")
 
 if __name__ == '__main__':
     app.run()
