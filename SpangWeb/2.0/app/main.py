@@ -16,9 +16,9 @@ def about():
 def textured_glass():
     return render_template("textured_glass.html")
 
-@app.route('/football_data')
-def football_data():
-    return render_template("footballdata.html")
+@app.route('/randomthoughts')
+def randomthoughts():
+    return render_template("randomthoughts.html")
 
 if __name__ == '__main__':
     app.run()
